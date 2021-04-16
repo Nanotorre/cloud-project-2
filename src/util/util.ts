@@ -33,8 +33,8 @@ export async function deleteLocalFiles(files:Array<string>){
     }
 }
 
+// Validate url string. Reference : https://www.regextester.com/94502
 export function validateUrl(url: string) {
-    //https://www.regextester.com/94502
     const urlRegex = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/g;
     return urlRegex.test(url);
 }
